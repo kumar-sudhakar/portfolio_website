@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+  <div id="header">
+    <div class="container idhome">
+      <nav class="nav-bar">
+        <img src="Images/logo.png" class="logo" />
+
+
+        <ul id="side-menu">
+
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Front-end Developer</p>
+        <h1>Hi I'm <span>Sudhakar</span> <br>From India</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-------------About--------------->
+
+  <div id="about" class="scroll-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-1">
+          <img src="Images/Background.jpg" height="500px" alt="">
+        </div>
+        <div class="col-2">
+          <H1 class="sub-title ">About Me</H1>
+
+          <p class="about-all">
+            Hi, I'm a passionate Frontend Developer with a creative edge and a love for building clean, responsive, and
+            user-friendly web interfaces. I specialize in crafting seamless digital experiences using HTML, CSS,
+            JavaScript, and modern frontend frameworks.
+            Over time, I've worked on exciting projects such as:
+            A Music Website that blends stunning UI with smooth audio playback.
+            A Myntra Clone that replicates the core functionality and design of the popular e-commerce platform.
+            A Weather App that fetches real-time weather data and presents it with an elegant interface.
+            I enjoy turning ideas into real, working websites that are both beautiful and functional. Whether it's
+            styling with CSS animations or integrating APIs, I focus on performance, responsiveness, and user
+            experience.
+            Always eager to learn and take on new challenges, I'm currently expanding my skills in React.js and Tailwind
+            CSS to build even more dynamic applications.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+
+
+          </div>
+          <div class="tab-contents active-tab " id="skills">
+            <ul>
+
+              <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+              <li><span>Web Development</span><br>Web App Devlopment</li>
+              <li><span>App Development</span><br>Mobile App Devlopment</li>
+
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+
+              <li><span>Eduskill Full Stack Internship</span><br>I gain knowledge to build responsive websites</li>
+              <li><span>Cisco Networking</span><br>I gain knowledge about networking</li>
+              <li><span>NPTEL Software Engineering</span><br>I gain knowledge about hoe to build softwares</li>
+
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+
+              <li><span>10th</span><br>Pandit Deen Dayal Upadhyay High School (84.6%)</li>
+              <li><span>12th</span><br>Pandit Deen Dayal Upadhyay High School (80.4%)</li>
+              <li><span>B.Tech</span><br>Galgotias University (80%)</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---------------Services----------------->
+
+
+  <div id="services" class="scroll-2">
+    <div class="container">
+      <H1 class="sub-title ">My Services</H1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>
+            I'm a creative Frontend Developer with a passion for both web design and app design. I build responsive,
+            user-friendly interfaces using HTML, CSS, and JavaScript, with projects like a Music Website, Myntra Clone,
+            and Weather App. I focus on clean layouts, smooth interactions, and mobile-first design, using tools like
+            Figma and Canva to bring ideas to life.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>UI/UX Design</h2>
+          <p>I'm a passionate Frontend Developer with a strong focus on UI/UX design and responsive web development.
+            I’ve created projects like a Music Website, Myntra Clone, and Weather App, blending clean code with
+            user-friendly interfaces. I love designing smooth, intuitive experiences using tools like Figma and Canva,
+            and I’m currently exploring React.js and Tailwind CSS to build modern, dynamic apps.</p>
+          <a href="#">Learn More</a>
+        </div>
+
+        <div>
+          <i class="fa-brands fa-app-store-ios"></i>
+          <h2>App Design</h2>
+          <p>I'm a creative Frontend Developer with a passion for clean, responsive web design. I’ve built projects like
+            a Music Website, Myntra Clone, and a Weather App, focusing on both functionality and user experience. I also
+            enjoy app design, creating mobile-friendly, intuitive interfaces using tools like Figma and Canva. I'm
+            currently learning React.js and Tailwind CSS to build even more dynamic apps.</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---------------------Portfolio--------------------->
+
+  <div id="portfolio" class="scroll-1">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="Images/work-1.png" alt="">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>I developed a Social Media App that allows users to create profiles, post updates, like and comment on
+              posts, and connect with others in a clean, responsive interface. The app focuses on a smooth user
+              experience with a modern UI, built using HTML, CSS, and JavaScript. I also incorporated key UI/UX design
+              principles to ensure easy navigation and mobile responsiveness. </p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="Images/work-2.png" alt="">
+          <div class="layer">
+            <h3>Music App</h3>
+            <p>I created a Music App that lets users explore and play songs through a clean, responsive interface. The
+              app features a modern design, smooth audio playback, and easy navigation. Built using HTML, CSS, and
+              JavaScript, it offers a user-friendly experience across all devices. I focused on UI/UX design to ensure
+              the layout, controls, and visuals enhance the listening experience.
+
+            </p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="Images/work-3.png" alt="">
+          <div class="layer">
+            <h3>Online Shopping App</h3>
+            <p>I developed an Online Shopping App inspired by Myntra, featuring product listings, filters, a shopping
+              cart, and a responsive design. Built using HTML, CSS, and JavaScript, the app replicates a real e-commerce
+              experience with clean layouts and smooth navigation. I focused on UI/UX design to ensure users can easily
+              browse, view product details, and interact with the interface on any device.
+
+            </p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!------------------Contact--------------------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> kumarsudhakar213@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i>7903593793</p>
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="Images/my_cv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @ Sudhakar. Made by <i class="fa-solid fa-heart"></i> Sudhakar</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+
+  <script>
+    var sideMenu = document.getElementById("side-menu");
+
+    function openmenu() {
+      sideMenu.style.right = '0';
+    }
+
+    function closemenu() {
+      sideMenu.style.right = '-200px';
+    }
+
+
+  </script>
+
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyQiXQ-nyKM097-rmJrmYHc-riAVk5xcMZmooeHzU6tRQD0PYdL3fiNLNkyOxGvIv6w/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const Msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        Msg.innerHTML = "Message Sent Successfully"
+        setTimeout(function(){
+          Msg.innerHTML =""
+        },5000)
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+
+</html>

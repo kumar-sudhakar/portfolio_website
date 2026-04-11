@@ -1,9 +1,3 @@
-# portfolio_website
-My InternSpark Assignment
-
-# portfolio-website
-My InternSpark Assignment
-
 # 🌐 Personal Portfolio Website
 
 ![HTML](https://img.shields.io/badge/HTML-5-orange)
